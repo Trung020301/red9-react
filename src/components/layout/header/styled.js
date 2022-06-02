@@ -44,6 +44,12 @@ export const Icon = styled.div`
   })}
 `;
 
+export const WrapperHeader = styled.div`
+  -webkit-box-shadow: 0px 10px 13px -7px #ccc,
+    5px 5px 15px 5px rgba(181, 181, 181, 0);
+  box-shadow: 0px 10px 13px -7px #ccc, 5px 5px 15px 5px rgba(181, 181, 181, 0);
+`;
+
 export const Container = styled.div`
   width: calc(60% - 12px);
   min-width: 1140px;
@@ -85,10 +91,10 @@ export const Logo = styled.div`
     }
   }
   ${mobile({
-    position:"absolute",
+    position: "absolute",
     width: "150px",
     left: "10px",
-    padding: "15px 0"
+    padding: "15px 0",
   })}
 `;
 
@@ -96,7 +102,7 @@ export const WrapperItem = styled.div`
   flex: 3;
   display: flex;
   justify-content: end;
-  transition: all ease-in .5s;
+  transition: all ease-in 0.5s;
   /* gap: 40px; */
   align-items: center;
   /* position: relative; */
@@ -108,7 +114,7 @@ export const WrapperItem = styled.div`
     alignItems: "normal",
   })}
 
-  & .d-f{
+  & .d-f {
     display: flex;
   }
 `;
@@ -118,9 +124,9 @@ export const Item = styled.div`
   font-weight: 500;
   font-size: 16px;
   color: #d71f26;
-  transition: all ease-in .4s;
+  transition: all ease-in 0.4s;
   padding: 25px 40px;
-  &:first-child{
+  &:first-child {
     ${mobile({
       borderTop: "1px solid #fff",
     })}
@@ -139,17 +145,15 @@ export const Item = styled.div`
     borderBottom: "1px solid #fff",
   })}
 
-  &:nth-child(6){
+  &:nth-child(6) {
     ${mobile({
       display: "none",
     })}
   }
-  
 `;
 
 export const Img = styled.img`
   width: 95%;
   object-fit: cover;
-  ${mobile({
-  })}
+  ${mobile({})}
 `;

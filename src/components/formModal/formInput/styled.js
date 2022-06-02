@@ -79,7 +79,6 @@ export const Input = styled.input`
     font-family: "IBM Plex Sans";
     font-weight: 500;
     font-size: 16px;
-    color: #dd2926;
     ${mobile({
       fontSize: "16px",
     })}
@@ -113,7 +112,6 @@ export const TextArea = styled.textarea`
     font-family: "IBM Plex Sans";
     font-weight: 500;
     font-size: 16px;
-    color: #dd2926;
     ${mobile({
       fontSize: "16px",
     })}

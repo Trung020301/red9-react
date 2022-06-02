@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { mobile } from "../../responesive";
 
 export default createGlobalStyle`
@@ -121,3 +121,22 @@ export const Container = styled.div`
   width: 85%;
 `;
 
+export const Button = styled.button`
+  ${({ theme }) => css`
+    font-size: ${theme.fontSize.button};
+    background-color: ${theme.bg.button};
+    ${mobile({
+      backgroundColor: "#f73152",
+    })}
+  `};
+
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  &:hover {
+    background-color: #adcdff;
+    color: #000;
+  }
+`;

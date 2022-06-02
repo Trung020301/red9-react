@@ -22,6 +22,7 @@ export const Wrapper = styled.div`
   width: calc(60% - 12px); 
   min-width: 1140px;
   margin: auto;
+  padding: 50px 0;
   overflow: hidden;
   ${mobile({
     display: "none",

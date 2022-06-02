@@ -10,7 +10,8 @@ import {
   Item,
   WrapperItem,
   Container,
-  Icon
+  Icon,
+  WrapperHeader
 } from "./styled";
 const Header = () => {
   const showRef = useRef(null)
@@ -27,7 +28,7 @@ const Header = () => {
   }
 
   return (
-    <>
+    <WrapperHeader>
     <Container>
       <Nav>
         <Icon height={show ? 1 : 0} onClick={handleClick}>
@@ -63,7 +64,7 @@ const Header = () => {
       </Nav>
     </Container>
     <ScrollBtn />
-    </>
+    </WrapperHeader>
   );
 };
 
